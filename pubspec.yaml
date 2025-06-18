@@ -1,15 +1,16 @@
-name: noite_aqui_flutter
-description: Projeto Flutter Noite Aqui com login e efeito giroscópio
-publish_to: 'none' 
+name: noiteaqui
+description: Projeto Flutter corrigido para Android embedding v2.
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.17.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  sensors_plus: ^2.0.0
+
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -17,5 +18,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/logo_noite_aqui.png
