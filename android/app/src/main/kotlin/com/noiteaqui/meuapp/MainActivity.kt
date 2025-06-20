@@ -1,4 +1,5 @@
-package com.example.noite_aqui
+package com.noiteaqui.meuapp
+
 
 import io.flutter.embedding.android.FlutterActivity
 
