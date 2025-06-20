@@ -5,10 +5,12 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - name: Clean project
-        script: |
-          flutter clean
-          flutter pub get
+      - name: Clean full cache
+    script: |
+      flutter clean
+      rm pubspec.lock || true
+      rm -rf .dart_tool || true
+      flutter pub get
       - name: Build release APK
         script: flutter build apk --release
     artifacts:
